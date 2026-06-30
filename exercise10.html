@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 10 - DOM Controls</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>Exercise 10: Document Object Tree Control</h1></header>
+    <section>
+        <h2>Dynamic Node Selection</h2>
+        <p id="text-node">This is standard paragraph text awaiting mutation.</p>
+        <button onclick="mutateText()">Trigger Script Alteration</button>
+    </section>
+
+    <script>
+        function mutateText() {
+            document.getElementById('text-node').innerText = "Text content mutated dynamically by script interface logic!";
+            document.getElementById('text-node').style.color = "#e74c3c";
+        }
+    </script>
+</body>
+</html>
