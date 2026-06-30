@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 09 - Responsive Design</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .responsive-card { background: #8e44ad; color: white; padding: 20px; text-align: center; }
+        @media (max-width: 600px) {
+            .responsive-card { background: #d35400; font-size: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Exercise 09: Adaptive Layout Medias</h1></header>
+    <section>
+        <h2>Media Query Interventions</h2>
+        <div class="responsive-card">
+            Resize the window width below 600px to trigger the condition color change rule.
+        </div>
+    </section>
+</body>
+</html>
