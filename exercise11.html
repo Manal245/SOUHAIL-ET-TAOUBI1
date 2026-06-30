@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 11 - Event Listening</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #interactive-panel {
+            padding: 30px;
+            background-color: #2ecc71;
+            color: white;
+            text-align: center;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Exercise 11: Advanced Event Handling</h1></header>
+    <section>
+        <h2>Interactive Event Triggers</h2>
+        <p>This assignment tracks programmatic tracking using direct element runtime hooks:</p>
+        <div id="interactive-panel">Hover your cursor or Tap here to shift system states.</div>
+    </section>
+
+    <script>
+        const panel = document.getElementById('interactive-panel');
+        
+        panel.addEventListener('mouseenter', () => {
+            panel.style.backgroundColor = '#16a085';
+            panel.innerText = "Cursor detected inside the node space!";
+        });
+
+        panel.addEventListener('mouseleave', () => {
+            panel.style.backgroundColor = '#2ecc71';
+            panel.innerText = "Hover your cursor or Tap here to shift system states.";
+        });
+    </script>
+</body>
+</html>
